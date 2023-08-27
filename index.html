@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="300">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clebin">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://riocapitalrp.com.br/mecanica/" >
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="Sistema Mecânica RP">
+    <meta property="og:description" content="Sistema que auxilia a mecânica do Rio Capital RP">
+
+    <title>Calculadora Mecânica</title>
+        
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/994691809345286302/1095757286154174564/LOGO_RC_-_RIO_CAPITAL_-_BLUE.png?width=676&height=676">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    
+    <script src="https://kit.fontawesome.com/c3ae6f6f36.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <img id="icone" src="imgs/mecanico.png" onmousemove="mudafoto ('imgs/mecanico2.png')" onmouseout="mudafoto('imgs/mecanico.png')">
+            <hgroup>
+                <h1>Sistema Mecânica</h1>
+                <h2>Praticidade > conforto</h2>
+            </hgroup>
+            <div class="manu">
+                <nav class="manu">
+                    <ul class="itens">
+                        <li><a href="menu/login.html">Login</a></li>
+                        <li><a href="menu/home.html">Home</a></li>
+                        <li><a href="index.html">Calculadora</a></li>
+                        <li><a href="menu/bateponto.html">Bate-Ponto</a></li>
+                        <li><a href="menu/gerencia.html">Gerência</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            <div class="hero">
+                <div class="row">
+                    <div class="input-group">
+                        <label for="nome"><i class="fa-solid fa-user"></i> Nome do Cliente:</label>
+                        <input type="text" id="nome" required autocomplete="off">
+
+                        <label for="Number"><i class="fa-solid fa-id-card"></i> ID do Cliente:</label>
+                        <input type="number" id="Number" required autocomplete="off">
+
+                        <label for="number"><i class="fa-solid fa-dollar-sign"></i> Valor Total:</label>
+                        <input type="number" id="number" required autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <main>
+                    <table>
+                        <thead>
+                            <th colspan="1" class="borda-left">Tunning</th>
+                            <th colspan="3" align="center" class="borda-left">Estética</th>
+                            <th colspan="1">Blindagem</th>
+                        </thead>
+                            <tbody id="tabela"> 
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td class="full"> <label><input name="teste" type="checkbox" class="check" value="235000" onclick="soma()" id="full"> 
+                                    Full tuning</label></td>
+                                    <!-- linha 2 -->
+                                    <td class="full"><label><input name="teste" type="checkbox" class="check" value="15000" onclick="soma()" id="check1">
+                                        Cor Primaria</label></td>
+                                    <!--Linha 3  -->
+                                    <td class="full"><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Rodas</label></td>
+                                    <!-- linha 4 -->
+                                    <td class="full"><label><input name="teste" type="checkbox" class="check" value="20000" onclick="soma()" id="check1">
+                                        Gaiola</label></td>
+                                    <!-- Linha 5 -->
+                                    <td class="full"><label><input name="teste" type="checkbox" class="check" value="600000" onclick="soma()" id="blindagem">
+                                        Blindagem Lataria</label></td>
+                                </tr>
+                            
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td><span><label><input name="teste" type="checkbox" class="check" value="-40000" onclick="soma()" id="parceria" disabled> 
+                                    Parceria</span></label></td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="18000" onclick="soma()" id="check1">
+                                    Cor secundaria</label></td>
+                                    <!-- linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                    Xenon</label></td>
+                                    <!-- linha 4 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                    Grade</label></td>
+                                    <!-- Linha 5 -->
+                                    <td><label> <input name="teste" type="checkbox" class="check" value="30000" onclick="soma()" id="check1">
+                                        Blindagem Pneu</label></td>
+                                </tr>
+            
+                                <tr>       
+                                    <!-- linha 1 --> 
+                                    <td><label><input name="teste" type="checkbox" class="check" value="30000" onclick="soma()" id="motor1">
+                                    Motor</label></td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="20000" onclick="soma()" id="check1">
+                                    Decalque</label></td>
+                                    <!-- linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="8000" onclick="soma()" id="check1">
+                                        Neon</label></td>
+                                    <!-- linha 4 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Escapamento</label></td>
+                                    <!-- Linha 5 -->
+                                    <td> </td>
+                                </tr>
+            
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="50000" onclick="soma()" id="motor2">
+                                    Turbo</label> </td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="15000" onClick="soma()" id="check1">
+                                    Vidro Fumê</label></td>
+                                    <!-- linha 3 -->
+                                        <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Saias</label></td>
+                                    <!-- Linha 4 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="15000" onclick="soma()" id="check1">
+                                        Som</label></td>
+                                    <!-- Linha 5 -->
+                                    <td> </td>
+                                </tr>
+            
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="40000" onclick="soma()" id="motor3">
+                                    Freio</label> </td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="20000" onclick="soma()" id="check1">
+                                        Aerofólio</label></td>
+                                    <!-- linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Para-Choque Dianteiro</label></td>
+                                    <!-- Linha 4 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Buzina</label></td>
+                                    <!-- Linha5 -->
+                                    <td> </td>
+                                </tr>
+                            
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="40000" onclick="soma()" id="motor4">
+                                    Transmissão</label> </td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="15000" onclick="soma()" id="check1">
+                                    Carroceria</label></td>
+                                    <!-- linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Para-Choque Traseiro</label></td>
+                                    <!-- Linha 4 -->
+                                    <td> </td>
+                                    <!-- Linha 5 -->
+                                    <td> </td>
+            
+                                </tr>
+            
+                                <tr>
+                                    <!-- linha 1 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="75000" onclick="soma()" id="motor5">
+                                    Suspensão</label> </td>
+                                    <!-- linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="8000" onclick="soma()" id="check1">
+                                    Placa</label></td>
+                                    <!-- Linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="10000" onclick="soma()" id="check1">
+                                        Para-Lama</label></td>
+                                    <!-- Linha 4 -->
+                                    <td> </td>
+                                    <!-- linha 5 -->
+                                    <td> </td>
+                                </tr>
+            
+                                <tr>
+                                    <!-- Linha 1 -->
+                                        <td> </td>
+                                        <!-- Linha 2 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="15000" onclick="soma()" id="check1">
+                                        Capo</label></td>
+                                        <!-- Linha 3 -->
+                                    <td><label><input name="teste" type="checkbox" class="check" value="20000" onclick="soma()" id="check1">
+                                        Teto</label></td>
+                                        <!-- Linha 4 -->
+                                        <td> </td>
+                                        <!-- linha 5 -->
+                                        <td> </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </main>
+            </section>
+        </div>
+
+        <div id="nav">
+            <button id="copy"><i class="fa-regular fa-copy" onclick="copiarDados()"> Copiar</i></button>
+            <span id="total"> R$ 0,00 </span>
+            <button id="btnCheckfalse"><i class="fa-solid fa-trash-can"></i> Limpar tudo</button>
+        </div>
+
+        <footer id="rodape">
+            <img src="https://media.discordapp.net/attachments/994691809345286302/1095757285919297576/LOGO_RC_-_RIO_CAPITAL_-_WHITE.png?width=676&height=676" alt="Logo rio LOGO_RC_-_RIO_CAPITAL_-_WHITE">
+            <p>
+                &copy; Copyright 2023 - by Mamoras ツ
+                <br>
+                <a class="insta" href="https://www.instagram.com/riocapitalrp/" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram </a> | <a class="tiktok" href="https://www.tiktok.com/@riocapitalrp" target="_blank"><i class="fa-brands fa-tiktok"></i> Tiktok  </a>
+            </p>
+            <ol class="termos">
+                <ul><a href="menu/home.html">Home</ul></a>
+                <ul><a href="politicas/termosp.html">Termos e Política de Privacidade</a></ul>
+                <ul><a href="politicas/termost.html">Termos de uso</a></ul>
+                <ul><a href="Ajuda/ajuda.html" target="_blank">Ajuda</a></ul>
+            </ol>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+</html>

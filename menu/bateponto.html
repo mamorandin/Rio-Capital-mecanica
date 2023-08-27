@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Ponto</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/994691809345286302/1095757286154174564/LOGO_RC_-_RIO_CAPITAL_-_BLUE.png?width=676&height=676">
+    <link rel="stylesheet" href="../css/bateponto.css">
+    <script src="https://kit.fontawesome.com/c3ae6f6f36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+    
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Sistema Mecânica</h1> 
+                <h2>Praticidade > conforto</h2>
+            </hgroup>
+            <div class="manu">
+                <nav class="manu">
+                    <ul class="itens">
+                        <li><a href="../menu/login.html">Login</a></li>
+                        <li><a href="../menu/home.html">Home</a></li>
+                        <li><a href="../index.html">Calculadora</a></li>
+                        <li><a href="../menu/bateponto.html">Bate-Ponto</a></li>
+                        <li><a href="../menu/gerencia.html">Gerência</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <img id="icone" src="../imgs/mecanico.png" onmousemove="mudafoto ('../imgs/mecanico2.png')" onmouseout="mudafoto('../imgs/mecanico.png')">
+    </header>
+    
+<div id="titulo"> 
+    <h1>Sistema Bate-Ponto</h1>
+</div>
+
+<form action="gerencia.html" method="get" id="bateponto" autocomplete="off">
+        <div class="itens-bateponto">
+
+            <label for="date"> <i class="fa-solid fa-calendar-days fa-beat-fade"> Data: </i></label>
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="data" placeholder=" Dia atual:" autofocus required>
+
+            <label for="time"> <i class="fa-regular fa-clock fa-beat-fade"> entrada: </i> </label>
+            <input type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time" name="time-in" placeholder=" Hora de entrada:" required>
+
+            <label for="time-out"><i class="fa-regular fa-clock fa-beat-fade"> Saida: </i></label>
+            <input type="text" onfocus="(this.type='time')" onblur="(this.type='text')" name="time-out" id="time-out" placeholder=" Hora de Saída:" required>
+
+            <label for="time-tt"><i class="fa-regular fa-clock fa-beat-fade"> Total: </i></label>
+            <input type="time" name="time-total" id="time-tt" placeholder=" Tempo Total:">
+
+            <button type="submit" id="register" onclick="ponto()">Registrar</button> 
+
+        </div>
+    </form>
+
+    <footer id="rodape">
+        <img src="https://media.discordapp.net/attachments/994691809345286302/1095757285919297576/LOGO_RC_-_RIO_CAPITAL_-_WHITE.png?width=676&height=676" alt="Logo rio LOGO_RC_-_RIO_CAPITAL_-_WHITE">
+        <p>
+            &copy; Copyright 2023 - by Mamoras ツ
+            <br>
+            <a class="insta" href="https://www.instagram.com/riocapitalroleplay/" target="_blank"> Instagram </a> | <a class="tiktok" href="https://www.tiktok.com/@riocapitalrp" target="_blank"> Tiktok  </a>
+        </p>
+        <ol class="termos">
+            <ul><a href="../menu/home.html">Home</ul></a>
+            <ul><a href="../politicas/termosp.html">Termos e Política de Privacidade</a></ul>
+            <ul><a href="../politicas/termost.html">Termos de uso</a></ul>
+            <ul><a href="../Ajuda/ajuda.html">Ajuda</a></ul>
+        </ol>
+    </footer>
+    <script src="../js/bateponto.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        function ponto() {
+          let timein = parseFloat(document.getElementById('time').value);
+          let timeout = parseFloat(document.getElementById('time-out').value);
+        
+          if (isNaN(timein) || isNaN(timeout)) {
+            alert('Porfavor coloque valores numéricos!');
+          } else if (timein >= timeout) {
+            alert('Valores errados');
+          } else {
+            alert('Registrado com sucesso!')
+          }
+        }
+        </script>
+</body>
+</html>

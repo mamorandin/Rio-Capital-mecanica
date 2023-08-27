@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'fontelogo';
+    src: url(_fonts/bubblegum-sans-regular.otf); }
+
+body {
+    background-color: #1b1f27;
+    overflow: hidden;
+}
+
+.itens {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -20px;
+}
+
+.itens li{
+    display: inline;
+    padding: 10px;
+    background-color:#181920;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.itens :hover {
+    background-color: #ff0000;
+    color: white;
+    text-decoration: underline;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    cursor:pointer;
+}
+
+#fundo {
+    position: absolute;
+    align-items: center;
+}
+
+.termos {
+    position: absolute;
+    display: inline;
+    text-align: right;
+    width: 97%;
+    margin-top: -50px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+#rodape img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#rodape {
+    position: relative;
+    display: block;
+    clear: both;
+    border-top: 1px solid #606060;
+    margin-top: 550px;
+}
+
+#rodape p {
+    text-align: center;
+    color: white;
+}
+
+#icone {
+    position: absolute;
+    left: 1750px;
+    top: 20px;
+    height: 64px;
+    width: 64px;
+}
+
+#cabecalho {
+    border-bottom: 1px black solid;
+    padding-bottom: -100px;
+}
+
+#cabecalho h1 {
+    color:rgba(255, 5, 5, 0.308);
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+#cabecalho h2 {
+    display: block;
+    font-family: 'fontelogo', sans-serif;
+    font-size: 12pt;
+    color: #888888;
+    padding: -10px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  background:#181920;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 25px;
+}
+
+.divTable {
+  padding: 10px;
+  width: auto; 
+  height:inherit; 
+  overflow:auto;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px solid rgb(238, 235, 235)!important;
+  }
+  
+  tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+    border-left: 1px solid black;
+  }
+  
+  thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  tbody tr {
+    margin-bottom: 50px;
+  }
+  
+  

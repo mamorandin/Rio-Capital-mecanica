@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de ajuda</title>
+    <link rel="stylesheet" href="ajuda.css">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/994691809345286302/1095757286154174564/LOGO_RC_-_RIO_CAPITAL_-_BLUE.png?width=676&height=676">
+    <script src="https://kit.fontawesome.com/c3ae6f6f36.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <button id="btnvoltar"><a href="../index.html">Voltar</a></button>
+    <div class="hero">
+        <form action="https://formsubmit.co/mecanicaajuda2@gmail.com" method="POST">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="nome" name="Nome" required>
+                    <label for="nome"><i class="fa-solid fa-user"></i> SEU NOME:</label>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number"  id="Number" name="ID" required>
+                    <label for="Number"><i class="fa-solid fa-id-card"></i> SEU ID:</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="Email" required>
+                <label for="email"><i class="fa-regular fa-envelope"></i> SEU E-MAIL:</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="mensagem" rows="15" name="Mensagem" required></textarea>
+                <label for="mensagem"><i class="fa-solid fa-message"></i> SEU MENSAGEM:</label>
+            </div>
+            <button class="enviar" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+</body>
+</html>

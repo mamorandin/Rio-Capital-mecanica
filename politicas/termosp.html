@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Política de Privacidade</title>
+    <link rel="stylesheet" href="../css/termos.css">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/994691809345286302/1095757286154174564/LOGO_RC_-_RIO_CAPITAL_-_BLUE.png?width=676&height=676">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Calculadora Mecânica</h1>
+                <h2>Praticidade > conforto</h2>
+            </hgroup>
+            <div class="manu">
+                <nav class="manu">
+                    <ul class="itens">
+                        <li><a href="../menu/login.html">Login</a></li>
+                        <li><a href="../index.html">Calculadora</a></li>
+                        <li><a href="../menu/bateponto.html">Bate-Ponto</a></li>
+                        <li><a href="../menu/gerencia.html">Gerência</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <img id="icone" src="../imgs/mecanico.png" onmousemove="mudafoto ('../imgs/mecanico2.png')" onmouseout="mudafoto('../imgs/mecanico.png')">
+    </header>
+
+    <div class="corpo">
+        <h1>Termos e Política de Privacidade</h1>
+        <h2>Bem-vindo ao Site da Mecânica! Estamos empenhados em proteger sua privacidade e em fornecer um ambiente seguro para sua experiência de navegação em nosso site. Por favor, leia atentamente os seguintes Termos e Política de Privacidade para entender como coletamos, usamos e protegemos suas informações pessoais.</h2>
+        <h3>1-Coleta de Informações:</h3>
+        <h2>1.1. Ao visitar o Site da Mecânica, podemos coletar informações pessoais, como nome, endereço de e-mail e número de telefone, quando fornecidas voluntariamente por você.
+            1.2. Podemos coletar informações não pessoais, como o tipo de navegador utilizado, o endereço IP, o sistema operacional e a atividade de navegação no site, por meio de cookies e tecnologias similares. Essas informações são usadas para melhorar a experiência do usuário e aprimorar nosso site.</h2>
+        <h3>2-Uso das Informações:</h3>
+        <h2>2.1. As informações pessoais fornecidas serão usadas para responder a suas solicitações, fornecer informações sobre nossos serviços, processar pagamentos, enviar comunicações promocionais (com seu consentimento prévio) e melhorar nossos serviços.
+            2.2. As informações não pessoais coletadas podem ser utilizadas para análise estatística, personalização de conteúdo, aprimoramento do site e desenvolvimento de estratégias de marketing.</h2>
+        <h3>3-Compartilhamento de Informações:</h3>
+        <h2>3.1. Não compartilharemos suas informações pessoais com terceiros, exceto nos seguintes casos: <br>
+            &nbsp; a) Quando necessário para cumprir com uma obrigação legal, responder a uma solicitação judicial ou proteger nossos direitos legais. <br>
+            &nbsp; b) Com fornecedores e prestadores de serviços que atuam em nosso nome, mas apenas na medida necessária para executar suas funções relacionadas aos serviços prestados.
+            3.2. Podemos compartilhar informações agregadas e anônimas com parceiros e anunciantes para fins de marketing e análise de mercado.</h2>
+        <h3>4-Segurança das Informações:</h3>
+        <h2>4.1. Empregamos medidas de segurança razoáveis para proteger as informações pessoais fornecidas. No entanto, nenhuma transmissão de dados pela internet é totalmente segura, e não podemos garantir a segurança absoluta de suas informações.</h2>
+        <h3>5-Links Externos:</h3>
+        <h2>5.1. O Site da Mecânica pode conter links para sites de terceiros. Esses sites possuem suas próprias políticas de privacidade, e não somos responsáveis pela coleta, uso ou divulgação de informações nesses sites. Recomendamos que você revise as políticas de privacidade de quaisquer sites visitados.</h2>
+        <h3>6-Alterações nesta Política de Privacidade:</h3>
+        <h2>6.1. Podemos atualizar esta Política de Privacidade de tempos em tempos. Quaisquer alterações serão publicadas nesta página, e a data da última atualização será indicada no topo. Recomendamos que você reveja periodicamente esta política para se manter informado sobre como protegemos suas informações.</h2>
+            <br><br>
+        <h2>Ao utilizar o Site da Mecânica, você concorda com os termos e práticas descritos nesta Política de Privacidade. Se tiver alguma dúvida ou preocupação sobre nossas práticas de privacidade, entre em contato conosco através das informações fornecidas em nosso site.</h2>
+        <h5>Última atualização: 17/07/2023</h5>
+    </div>
+    <button onclick="termos()" class="btn-acc"> Aceitar termos! </button>
+    
+    <footer id="rodape">
+        <img src="https://media.discordapp.net/attachments/994691809345286302/1095757285919297576/LOGO_RC_-_RIO_CAPITAL_-_WHITE.png?width=676&height=676" alt="Logo rio LOGO_RC_-_RIO_CAPITAL_-_WHITE">
+        <p>
+            &copy; Copyright 2023 - by Mamoras ツ
+            <br>
+            <a class="insta" href="https://www.instagram.com/riocapitalroleplay/" target="_blank"> Instagram </a> | <a class="tiktok" href="https://www.tiktok.com/@riocapitalrp" target="_blank"> Tiktok  </a>
+        </p>
+        <ol class="termos">
+            <ul><a href="../menu/home.html">Home</ul></a>
+            <ul><a href="termosp.html">Termos e Política de Privacidade</a></ul>
+            <ul><a href="termost.html">Termos de uso</a></ul>
+            <ul><a href="../Ajuda/ajuda.html">Ajuda</a></ul>
+        </ol>
+    </footer>
+    <script type="text/javascript" src="../script.js"></script>
+    <script>
+        function termos(){
+
+            Swal.fire({
+                title: 'Termos e condições',
+                input: 'checkbox',
+                inputValue: 1,
+                inputPlaceholder:
+                    'Eu concordo com os termos e Condições',
+                confirmButtonText:
+                    'Continuar <i class="fa fa-arrow-right"></i>',
+                inputValidator: (result) => {
+                    return !result && 'Você precisa concordar com os T&C'
+                }
+                })
+        }
+                        
+    </script>
+</body>
+</html>

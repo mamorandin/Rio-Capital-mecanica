@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h3 align=center> <a href='https://riocapitalrp.com.br/mecanica/' target="_blank"> Rio-Capital-Mecanica </a> <h3>
+<h3 align=center> <a href='https://riocapitalrp.com.br/mecanica/' target="_blank" > Rio-Capital-Mecanica </a> <h3>
 
 ## 🍭 | About
 

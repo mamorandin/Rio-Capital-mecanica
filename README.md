@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h3 align=center>Rio-Capital-Mecanica/Morandin <h3>
+<h3 align=center> <a href='https://riocapitalrp.com.br/mecanica/'> Rio-Capital-Mecanica </a> <h3>
 
 ## 🍭 | About
 
